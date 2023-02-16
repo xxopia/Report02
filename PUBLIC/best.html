@@ -13,117 +13,88 @@
             border:none;
             padding:0;
         }
+        .wrap{
+            width:360px;
+            margin:0 auto;
+            padding-top:29px;
+        }
         a{
             color:black;
             text-decoration:none;
         }
-        /* Grid */
-        .col01{width:75px;}
-        .col02{width:160px;}
-        .col03{width:245px;}
-        .col04{width:330px;}
-
-        header h1{
+        .img-box{
+            width:360;
+            height:352px;
+            margin-top:48px;
+            margin-bottom:53px;
+        }
+        h1{
             padding-top:29px;
             text-align:center;
             font-family:'Roboto';
             font-weight:900;
+            margin-bottom:50px;
         }
-        #sliders{
-            padding-top:48px;
+        .btn-box{
+            padding:0 15px;
         }
-        .slider{
-            width:360;
-            height:352px;
-            overflow:hidden;
-        }
-        #points{
-            position:absolute;
-            left:164px;
-            top:433px; 
-        }
-        .dot{
-            width:8px;
-            height:8px;
-            margin-left:4px;
-            margin-right:4px;
-            border-radius:8px;
-            background-color:#999999;
-            display:inline-block;
-        }
-        #first-dot{
-            background-color:#c59c6c;
-        }
-        .text{
-            padding-top:53px;
-        }
-        section h1{
-            font-family:'Noto Sans KR';
-            font-weight:500;
-            font-size:24px;
-            color:#333333;
-            text-align:center;
-        }
-        footer{
-            width:375px;
-            height:70px;
-            padding:15px;
-        }
-        footer div{
-            height:47px;
-            margin-right:10px;
-            border:2px solid #c59c6c;
-            padding-top:10px;
-            border-radius:23.5px;
-            background-color:#c59c6c;
+        .btn{
             float:left;
+            width:150px;
+            margin-bottom:10px;
+        }
+        .btn01{
+            margin-right:10px;
+        }
+        .btn03{
+            width:185px;
+        }
+        .btn a{
+            display:inline-block;
+            width:inherit;
+            border-radius:28px;
+            padding:17px 0;
+            font-family:'Noto Sans KR';
+            font-weight:400;
+            font-size:14px;
+            color:#ffffff;
             text-align:center;
+            background-color:#c59c6c;
         }
-        footer .inv{            
-            background-color:#ffffff;
-        }
-        footer .inv a{
+        .btn02 a{
+            border:2px solid #c59c6c;
             color:#c59c6c;
+            background-color:#ffffff;
+            
         }
-        footer .connect{
-            margin-top:10px;
+        .btn03 a{
             border:2px solid #830c95;
-        }
-        footer .connect a{
-            color:#333333
+            color:#830c95;
+            background-color:#ffffff;
+            width:310px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>
-            CoffeeYJ
-        </h1>
-    </header>
-    <div id="contents">
-        <div id="sliders"></div>
-        <div class="slider">
-            <img src="./images/slider.jpg"" alt="슬라이더 01">
+    <div class="wrap">
+        <header>
+            <h1>CoffeeYJ</h1>
+        </header>
+        <div class="img-box">
+            <img src="./images/slider.jpg" alt="">
         </div>
-    <div id="points">
-        <div class="dot" id="first-dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-    </div>
-    </div>
-    </div>
-    <section>
-    <div class="text">
         <h1>로그인 후 최고의 커피를<br>만나보세요</h1>
-    </div>
-    </section>
-    <footer>
-        <div class="col02"><a href="#">Register</a></div>
-        <div class="col02 inv"><a href="./Login.html">Log in</a></div>
-            <div class="col04 inv connect"><a href="#""><img src="./images/instagram.png" alt="인스타그램"> Connect with Instagram</a></div>
-    </footer>
-    <div class=instagram>
-        
+        <div class="btn-box">
+            <div class="btn btn01">
+                <a href="#">Register</a>
+            </div>
+            <div class="btn btn02">
+                <a href="Login.html">Log in</a>
+            </div>
+                <div class="btn btn03">
+                <a href="#">Connect with Instagram</a>
+            </div>
         </div>
+    </div>
 </body>
 </html>

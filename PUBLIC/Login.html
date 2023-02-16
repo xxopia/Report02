@@ -13,9 +13,10 @@
             border:none;
             padding:0;
         }
-        a{
-            color:black;
-            text-decoration:none;
+        .wrap{
+            width:360px;
+            margin:0 auto;
+            padding-top:29px;
         }
         /* Grid */
         .col01{width:75px;}
@@ -23,6 +24,10 @@
         .col03{width:245px;}
         .col04{width:330px;}
 
+        a{
+            color:black;
+            text-decoration:none;
+        }
         .arrow{
             margin:25px 0 0 10px;
         }
@@ -31,14 +36,13 @@
             font-weight:900;
             font-size:36px;
             text-align:center;
-            margin:132px 0 124px 0;
-            color:#333333            
+            margin:88px 0 124px 0;
+            color:#333333;            
         }
         .notice-box{
             margin:0 auto;
             border-top:1px solid #c59c6c;
             border-bottom:1px solid #c59c6c;
-
         }
         section h2{
             font-family:'Roboto';
@@ -47,6 +51,13 @@
             color:#999999;
             margin-left:15px;
         }
+        section h3{
+            font-family:'Noto Sans KR';
+            font-weight:500;
+            font-size:16px;
+            color:#c59c6c;
+            margin:20px 0 0 247px;
+        }
         .password{
             margin:132px 0 0 0;
             font-family:'Roboto';
@@ -54,22 +65,22 @@
             font-size:16px;
             color:#999999;
         }
-        section h3{
-            font-family:'Noto Sans KR';
-            font-weight:500;
-            font-size:15px;
-            color:#c59c6c;
-            margin-left:255px;
+        .btn{
+            width:150px;
+            width:330PX;
+            margin-top:88px;
         }
-        footer div{
-            height:44px;
-            margin:88px 15px 0 15px;
-            border:2px solid #c59c6c;
-            padding-top:10px;
-            border-radius:23.5px;
-            background-color:#c59c6c;
-            float:left;
+        .btn a{
+            display:inline-block;
+            width:inherit;
+            border-radius:28px;
+            padding:17px 0;
+            font-family:'Noto Sans KR';
+            font-weight:400;
+            font-size:14px;
+            color:#ffffff;
             text-align:center;
+            background-color:#c59c6c;
         }
         footer a{
             font-family:'Noto Sans KR';
@@ -85,11 +96,12 @@
             color:#999999;
             text-align:center;
             margin-top:21px;
-
+            text-align:center;
         }
     </style>
 </head>
 <body>
+    <div class="wrap">
     <header>
         <div class="arrow">
            <div><a href="./best.html"><img src="./images/arrow.jpg""></a></div>
@@ -104,8 +116,12 @@
         <h3>패스워드 찾기</h3>
     </section>
     <footer>
-        <div class="col04"><a href="#">Log in</a></div>
+        <div class="btn-box">
+            <div class="btn btn01">
+                <a href="#">Log in</a>
+            </div>
         <h4>회원이 아니신가요? 회원가입</h4>
     </footer>
+    </div>
 </body>
 </html>
